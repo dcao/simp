@@ -1,0 +1,18 @@
+[package]
+name = "simp"
+version = "0.1.0"
+authors = ["David Cao <david@cao.sh>"]
+edition = "2018"
+
+[dependencies]
+nom = "6"
+iced = { git = "https://github.com/hecrj/iced", branch = "master", features = ["image", "canvas"] }
+iced_native = { git = "https://github.com/hecrj/iced", branch = "master" }
+
+[lib]
+name = "simp"
+path = "src/lib.rs"
+
+[[bin]]
+name = "simp"
+path = "src/main.rs"
